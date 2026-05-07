@@ -1,0 +1,256 @@
+/* ================================================================
+   Mst Shapna Akter — Premium Academic Portfolio
+   Design: Inter (body) + Playfair Display (headings)
+   Palette: Deep navy #0f1b2d, Teal accent #0d7377, Warm off-white #fafaf8
+   ================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap');
+
+/* ---------- Reset ---------- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fafaf8;
+    color: #1e1e2e;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+}
+
+a { color: #0d7377; text-decoration: none; transition: color 0.2s; }
+a:hover { color: #0a5a5d; text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---------- Top Navigation ---------- */
+.topnav {
+    background: #0f1b2d;
+    position: sticky; top: 0; z-index: 1000;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 48px; height: 58px;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.06);
+}
+
+.topnav .brand {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.1rem; font-weight: 700;
+    color: #e8e4d9; letter-spacing: 0.2px; white-space: nowrap;
+}
+
+.topnav nav { display: flex; gap: 2px; align-items: center; }
+
+.topnav nav a {
+    font-size: 0.82rem; font-weight: 500; letter-spacing: 0.4px;
+    text-transform: uppercase; color: #a8b2c0;
+    padding: 6px 14px; border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+    white-space: nowrap;
+}
+
+.topnav nav a:hover { background: rgba(255,255,255,0.07); color: #e8e4d9; text-decoration: none; }
+.topnav nav a.active { color: #4ecdc4; background: rgba(78,205,196,0.1); }
+
+/* ---------- Page Wrapper ---------- */
+.page-wrapper { max-width: 860px; margin: 0 auto; padding: 56px 32px 100px; }
+
+/* ---------- Hero Section ---------- */
+.hero {
+    padding-bottom: 44px;
+    border-bottom: 1px solid #e2ddd6;
+    margin-bottom: 52px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.6rem; font-weight: 700; color: #0f1b2d;
+    line-height: 1.2; margin-bottom: 6px;
+    letter-spacing: -0.5px;
+}
+
+.hero .subtitle {
+    font-size: 1rem; color: #5a6478; font-weight: 400;
+    margin-bottom: 22px; line-height: 1.5;
+}
+
+.hero-meta { list-style: none; margin-bottom: 24px; }
+.hero-meta li {
+    font-size: 0.9rem; color: #4a5568; padding: 3px 0;
+    display: flex; align-items: baseline; gap: 10px;
+}
+.hero-meta li::before {
+    content: '';
+    display: inline-block;
+    width: 5px; height: 5px;
+    border-radius: 50%; background: #0d7377;
+    flex-shrink: 0; margin-top: 7px;
+}
+
+.hero-links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 4px; }
+
+.btn-link {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 7px 18px; border-radius: 3px; font-size: 0.82rem;
+    font-weight: 600; letter-spacing: 0.3px;
+    border: 1.5px solid #0d7377; color: #0d7377;
+    background: transparent; transition: all 0.2s;
+    text-transform: uppercase;
+}
+.btn-link:hover {
+    background: #0d7377; color: #fff; text-decoration: none;
+}
+
+/* ---------- Announcement Banner ---------- */
+.notice-box {
+    background: #f0faf9;
+    border-left: 3px solid #0d7377;
+    padding: 13px 20px; margin-bottom: 52px;
+    font-size: 0.9rem; color: #2d4a4a; line-height: 1.65;
+    border-radius: 0 4px 4px 0;
+}
+.notice-box a { font-weight: 600; }
+
+/* ---------- Sections ---------- */
+.section { margin-bottom: 52px; }
+
+.section-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.45rem; font-weight: 700; color: #0f1b2d;
+    margin-bottom: 18px; padding-bottom: 10px;
+    border-bottom: 2px solid #0f1b2d;
+    letter-spacing: -0.2px;
+}
+
+.section p {
+    font-size: 0.95rem; color: #2d3748; line-height: 1.85;
+    margin-bottom: 14px;
+}
+
+/* ---------- Research Interest Tags ---------- */
+.interest-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+.interest-tag {
+    background: transparent;
+    color: #0f1b2d;
+    border: 1px solid #b0bac8;
+    border-radius: 2px;
+    padding: 4px 14px;
+    font-size: 0.82rem; font-weight: 500;
+    letter-spacing: 0.2px;
+    transition: all 0.2s;
+}
+.interest-tag:hover { border-color: #0d7377; color: #0d7377; }
+
+/* ---------- News ---------- */
+.news-list { list-style: none; }
+.news-list li {
+    display: grid; grid-template-columns: 110px 1fr;
+    gap: 16px; padding: 10px 0;
+    border-bottom: 1px solid #ede9e2;
+    font-size: 0.9rem; align-items: baseline;
+    line-height: 1.65;
+}
+.news-list li:last-child { border-bottom: none; }
+.news-date {
+    font-size: 0.78rem; font-weight: 600; color: #0d7377;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    padding-top: 2px;
+}
+.news-text { color: #2d3748; }
+.news-highlight { font-weight: 700; color: #0f1b2d; }
+
+/* ---------- Publications ---------- */
+.pub-section-title {
+    font-size: 0.78rem; font-weight: 700; letter-spacing: 1px;
+    text-transform: uppercase; color: #0d7377;
+    border-bottom: 1px solid #d0ccc5;
+    padding-bottom: 6px; margin: 28px 0 14px;
+}
+
+.pub-list { list-style: none; }
+.pub-list li {
+    padding: 11px 0 11px 20px;
+    border-bottom: 1px solid #ede9e2;
+    font-size: 0.9rem; color: #2d3748;
+    line-height: 1.75; position: relative;
+}
+.pub-list li::before {
+    content: '';
+    position: absolute; left: 0; top: 20px;
+    width: 4px; height: 4px;
+    border-radius: 50%; background: #0d7377;
+}
+.pub-list li:last-child { border-bottom: none; }
+.pub-list li em { color: #5a6478; font-style: italic; }
+.pub-list strong { color: #0f1b2d; }
+
+.pub-badge {
+    display: inline-block; font-size: 0.7rem; font-weight: 700;
+    background: #fff8e1; color: #8a6d00;
+    border: 1px solid #e6c84a;
+    border-radius: 2px; padding: 1px 6px;
+    margin-left: 5px; vertical-align: middle;
+    letter-spacing: 0.3px;
+}
+
+/* ---------- Teaching / Service ---------- */
+.content-list { list-style: none; }
+.content-list li {
+    padding: 9px 0 9px 20px;
+    border-bottom: 1px solid #ede9e2;
+    font-size: 0.9rem; color: #2d3748;
+    line-height: 1.7; position: relative;
+}
+.content-list li::before {
+    content: '';
+    position: absolute; left: 0; top: 18px;
+    width: 4px; height: 4px;
+    border-radius: 50%; background: #0d7377;
+}
+.content-list li:last-child { border-bottom: none; }
+
+.subsection-title {
+    font-size: 0.78rem; font-weight: 700; letter-spacing: 1px;
+    text-transform: uppercase; color: #0d7377;
+    margin: 24px 0 10px;
+    border-bottom: 1px solid #d0ccc5; padding-bottom: 5px;
+}
+
+/* ---------- Grant Card ---------- */
+.grant-card {
+    border-left: 3px solid #0d7377;
+    padding: 14px 20px; margin-bottom: 16px;
+    background: #f7fafa;
+    font-size: 0.9rem; line-height: 1.75; color: #2d3748;
+}
+.grant-badge {
+    display: inline-block; background: #0d7377; color: #fff;
+    font-size: 0.72rem; font-weight: 700; letter-spacing: 0.5px;
+    text-transform: uppercase; border-radius: 2px;
+    padding: 2px 8px; margin-bottom: 8px;
+}
+
+/* ---------- Opening Card ---------- */
+.opening-card {
+    border-left: 3px solid #0d7377;
+    padding: 20px 24px; background: #f7fafa;
+    font-size: 0.95rem; line-height: 1.9; color: #2d3748;
+}
+.opening-card p { margin-bottom: 12px; }
+.opening-card p:last-child { margin-bottom: 0; }
+
+/* ---------- Footer ---------- */
+.site-footer {
+    background: #0f1b2d; color: #7a8a9a;
+    text-align: center; padding: 22px 24px;
+    font-size: 0.8rem; letter-spacing: 0.3px;
+    margin-top: 60px;
+}
+.site-footer a { color: #4ecdc4; }
+.site-footer a:hover { color: #7eddd9; text-decoration: none; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 700px) {
+    .topnav { padding: 10px 16px; flex-wrap: wrap; height: auto; gap: 8px; }
+    .page-wrapper { padding: 32px 18px 60px; }
+    .hero h1 { font-size: 1.9rem; }
+    .news-list li { grid-template-columns: 1fr; gap: 4px; }
+    .news-date { font-size: 0.75rem; }
+}
