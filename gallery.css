@@ -127,3 +127,54 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* ---------- Video Project Sections ---------- */
+.video-project {
+    margin-bottom: 32px;
+    padding: 20px 24px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #0d7377;
+}
+
+.project-title {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin: 0 0 6px;
+}
+
+.project-desc {
+    font-size: 0.88rem;
+    color: #4a5568;
+    line-height: 1.6;
+    margin: 0 0 16px;
+}
+
+/* ---------- Embedded Video (iframe) ---------- */
+.gallery-video-embed {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(15, 27, 45, 0.08);
+}
+
+.gallery-video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 700px) {
+    .video-project {
+        padding: 16px;
+        margin-bottom: 24px;
+    }
+}
