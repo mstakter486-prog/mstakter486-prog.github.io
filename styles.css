@@ -1,7 +1,7 @@
 /* ================================================================
    Mst Shapna Akter — Professional Academic Portfolio
    Design: Inter (body) + Playfair Display (headings)
-   Palette: Clean white, Teal accent #0d7377, Navy #0f1b2d
+   Palette: Clean white, Brick accent #b35c3a, Navy #0f1b2d
    Inspired by: kaiqi-zhao.github.io & aimansnigdha.github.io
    ================================================================ */
 
@@ -19,8 +19,8 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-a { color: #0d7377; text-decoration: none; transition: color 0.2s; }
-a:hover { color: #0a5a5d; text-decoration: underline; text-underline-offset: 3px; }
+a { color: #b35c3a; text-decoration: none; transition: color 0.2s; }
+a:hover { color: #8f4a2e; text-decoration: underline; text-underline-offset: 3px; }
 
 /* ---------- Top Navigation ---------- */
 .topnav {
@@ -48,8 +48,8 @@ a:hover { color: #0a5a5d; text-decoration: underline; text-underline-offset: 3px
     white-space: nowrap;
 }
 
-.topnav nav a:hover { background: #f0f7f7; color: #0d7377; text-decoration: none; }
-.topnav nav a.active { color: #0d7377; background: #e8f5f5; font-weight: 600; }
+.topnav nav a:hover { background: #fdf5f2; color: #b35c3a; text-decoration: none; }
+.topnav nav a.active { color: #b35c3a; background: #fdf0eb; font-weight: 600; }
 
 /* ---------- Page Wrapper ---------- */
 .page-wrapper { max-width: 900px; margin: 0 auto; padding: 56px 32px 100px; }
@@ -102,7 +102,7 @@ a:hover { color: #0a5a5d; text-decoration: underline; text-underline-offset: 3px
     content: '';
     display: inline-block;
     width: 5px; height: 5px;
-    border-radius: 50%; background: #0d7377;
+    border-radius: 50%; background: #b35c3a;
     flex-shrink: 0; margin-top: 7px;
 }
 
@@ -112,20 +112,20 @@ a:hover { color: #0a5a5d; text-decoration: underline; text-underline-offset: 3px
     display: inline-flex; align-items: center; gap: 6px;
     padding: 7px 18px; border-radius: 4px; font-size: 0.82rem;
     font-weight: 600; letter-spacing: 0.3px;
-    border: 1.5px solid #0d7377; color: #0d7377;
+    border: 1.5px solid #b35c3a; color: #b35c3a;
     background: transparent; transition: all 0.2s;
     text-transform: uppercase;
 }
 .btn-link:hover {
-    background: #0d7377; color: #fff; text-decoration: none;
+    background: #b35c3a; color: #fff; text-decoration: none;
 }
 
 /* ---------- Announcement Banner ---------- */
 .notice-box {
-    background: #f0faf9;
-    border-left: 3px solid #0d7377;
+    background: #fdf5f2;
+    border-left: 3px solid #b35c3a;
     padding: 13px 20px; margin-bottom: 52px;
-    font-size: 0.9rem; color: #2d4a4a; line-height: 1.65;
+    font-size: 0.9rem; color: #4a3028; line-height: 1.65;
     border-radius: 0 4px 4px 0;
 }
 .notice-box a { font-weight: 600; }
@@ -149,16 +149,16 @@ a:hover { color: #0a5a5d; text-decoration: underline; text-underline-offset: 3px
 /* ---------- Research Interest Tags ---------- */
 .interest-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
 .interest-tag {
-    background: #f0f7f7;
-    color: #0d7377;
-    border: 1px solid #c8e6e6;
+    background: #fdf5f2;
+    color: #b35c3a;
+    border: 1px solid #e8c4b5;
     border-radius: 4px;
     padding: 5px 14px;
     font-size: 0.82rem; font-weight: 500;
     letter-spacing: 0.2px;
     transition: all 0.2s;
 }
-.interest-tag:hover { border-color: #0d7377; background: #e0f2f2; }
+.interest-tag:hover { border-color: #b35c3a; background: #fceee8; }
 
 /* ---------- News ---------- */
 .news-list { list-style: none; }
@@ -171,7 +171,7 @@ a:hover { color: #0a5a5d; text-decoration: underline; text-underline-offset: 3px
 }
 .news-list li:last-child { border-bottom: none; }
 .news-date {
-    font-size: 0.78rem; font-weight: 600; color: #0d7377;
+    font-size: 0.78rem; font-weight: 600; color: #b35c3a;
     text-transform: uppercase; letter-spacing: 0.5px;
     padding-top: 2px;
 }
@@ -181,7 +181,7 @@ a:hover { color: #0a5a5d; text-decoration: underline; text-underline-offset: 3px
 /* ---------- Publications ---------- */
 .pub-section-title {
     font-size: 0.78rem; font-weight: 700; letter-spacing: 1px;
-    text-transform: uppercase; color: #0d7377;
+    text-transform: uppercase; color: #b35c3a;
     border-bottom: 1px solid #e8e8e8;
     padding-bottom: 6px; margin: 28px 0 14px;
 }
@@ -197,7 +197,7 @@ a:hover { color: #0a5a5d; text-decoration: underline; text-underline-offset: 3px
     content: '';
     position: absolute; left: 0; top: 20px;
     width: 4px; height: 4px;
-    border-radius: 50%; background: #0d7377;
+    border-radius: 50%; background: #b35c3a;
 }
 .pub-list li:last-child { border-bottom: none; }
 .pub-list li em { color: #5a6478; font-style: italic; }
@@ -224,27 +224,27 @@ a:hover { color: #0a5a5d; text-decoration: underline; text-underline-offset: 3px
     content: '';
     position: absolute; left: 0; top: 18px;
     width: 4px; height: 4px;
-    border-radius: 50%; background: #0d7377;
+    border-radius: 50%; background: #b35c3a;
 }
 .content-list li:last-child { border-bottom: none; }
 
 .subsection-title {
     font-size: 0.78rem; font-weight: 700; letter-spacing: 1px;
-    text-transform: uppercase; color: #0d7377;
+    text-transform: uppercase; color: #b35c3a;
     margin: 24px 0 10px;
     border-bottom: 1px solid #e8e8e8; padding-bottom: 5px;
 }
 
 /* ---------- Grant Card ---------- */
 .grant-card {
-    border-left: 3px solid #0d7377;
+    border-left: 3px solid #b35c3a;
     padding: 14px 20px; margin-bottom: 16px;
-    background: #f8fffe;
+    background: #fdf9f7;
     font-size: 0.9rem; line-height: 1.75; color: #2d3748;
     border-radius: 0 6px 6px 0;
 }
 .grant-badge {
-    display: inline-block; background: #0d7377; color: #fff;
+    display: inline-block; background: #b35c3a; color: #fff;
     font-size: 0.72rem; font-weight: 700; letter-spacing: 0.5px;
     text-transform: uppercase; border-radius: 3px;
     padding: 2px 8px; margin-bottom: 8px;
@@ -252,8 +252,8 @@ a:hover { color: #0a5a5d; text-decoration: underline; text-underline-offset: 3px
 
 /* ---------- Opening Card ---------- */
 .opening-card {
-    border-left: 3px solid #0d7377;
-    padding: 20px 24px; background: #f8fffe;
+    border-left: 3px solid #b35c3a;
+    padding: 20px 24px; background: #fdf9f7;
     font-size: 0.95rem; line-height: 1.9; color: #2d3748;
     border-radius: 0 6px 6px 0;
 }
@@ -282,6 +282,7 @@ a:hover { color: #0a5a5d; text-decoration: underline; text-underline-offset: 3px
     width: 100%;
     height: auto;
     display: block;
+    object-fit: contain;
     transition: transform 0.3s;
 }
 .project-card-image:hover img {
@@ -303,7 +304,7 @@ a:hover { color: #0a5a5d; text-decoration: underline; text-underline-offset: 3px
 
 .project-card-venue {
     font-size: 0.8rem;
-    color: #0d7377;
+    color: #b35c3a;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.3px;
@@ -338,12 +339,12 @@ a:hover { color: #0a5a5d; text-decoration: underline; text-underline-offset: 3px
 }
 
 .project-btn-paper {
-    background: #0d7377;
+    background: #b35c3a;
     color: #fff;
-    border: 1.5px solid #0d7377;
+    border: 1.5px solid #b35c3a;
 }
 .project-btn-paper:hover {
-    background: #0a5a5d;
+    background: #8f4a2e;
     color: #fff;
     text-decoration: none;
 }
@@ -367,8 +368,8 @@ a:hover { color: #0a5a5d; text-decoration: underline; text-underline-offset: 3px
     border-top: 1px solid #e8e8e8;
     margin-top: 60px;
 }
-.site-footer a { color: #0d7377; }
-.site-footer a:hover { color: #0a5a5d; text-decoration: none; }
+.site-footer a { color: #b35c3a; }
+.site-footer a:hover { color: #8f4a2e; text-decoration: none; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 700px) {
