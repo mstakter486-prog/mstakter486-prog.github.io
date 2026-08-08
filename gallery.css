@@ -21,7 +21,7 @@
 
 .event-date {
     font-weight: 600;
-    color: #0d7377;
+    color: #b35c3a;
     text-transform: uppercase;
     letter-spacing: 0.3px;
 }
@@ -40,7 +40,7 @@
     font-weight: 700;
     letter-spacing: 0.8px;
     text-transform: uppercase;
-    color: #0d7377;
+    color: #b35c3a;
     margin: 28px 0 16px;
     padding-bottom: 6px;
     border-bottom: 1px solid #e2ddd6;
@@ -134,7 +134,7 @@
     padding: 20px 24px;
     background: #f8f9fa;
     border-radius: 8px;
-    border-left: 4px solid #0d7377;
+    border-left: 4px solid #b35c3a;
 }
 
 .project-title {
