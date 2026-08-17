@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Security Lab">
+  <rect width="64" height="64" rx="14" fill="#071216"/>
+  <path d="M32 9 51 16v14c0 13-7.7 21.1-19 25-11.3-3.9-19-12-19-25V16z" fill="#c65a2e"/>
+  <path d="M32 18v26M21 31h22" stroke="#f7f3eb" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="32" cy="31" r="7" fill="#071216" stroke="#f7f3eb" stroke-width="3"/>
+</svg>
